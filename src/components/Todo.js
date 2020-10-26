@@ -30,11 +30,11 @@ export default class Todo extends PureComponent {
     return (
       <li className="list-group-item">
         <span className={classNames}
-            onClick={() => this.props.dispatch(completeTodo(id))}>
+          onClick={() => this.props.dispatch(completeTodo(id))}>
           {text}
         </span>
         <div className="close"
-            onClick={() => this.props.dispatch(deleteTodo(id))}>
+          onClick={() => this.props.dispatch(deleteTodo(id))}>
           &times;
         </div>
       </li>

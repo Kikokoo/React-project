@@ -30,8 +30,8 @@ export default class TodoList extends PureComponent {
             {todoList.map(todo => {
               return (
                 <Todo key={todo.get('id')}
-                    dispatch={this.props.dispatch}
-                    todo={todo}
+                  dispatch={this.props.dispatch}
+                  todo={todo}
                 />
               );
             })}
